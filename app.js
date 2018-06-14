@@ -23,6 +23,7 @@ var reqData = function(req) {
 
 app.all('*', function (req, res) {
   res.set('Content-Type', 'application/json');
+  res.set("Access-Control-Allow-Origin", "*");
   var response = reqData(req);
   res.status(200).send(JSON.stringify(response,null,2));
 });
