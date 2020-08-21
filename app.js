@@ -1,22 +1,36 @@
-var express = require('express');
-var bodyParser = require('body-parser');
-var cors = require('cors')
+const express = require('express');
+const winston = require('winston');
+const util = require('util');
+const cors = require('cors');
 
-var app = express();
+const logger = winston.createLogger({
+  format: winston.format.combine(
+    winston.format.timestamp({
+      format: 'YYYY-MM-DD HH:mm:ss'
+    }),
+    // winston.format.simple()
+    winston.format.printf(info => `${info.timestamp} [${info.level}]: ${info.message}`)
+  ),
+  transports: [
+    new winston.transports.Console()
+  ]
+});
 
-var port = process.env.PORT || 3000,
-    ip   = process.env.IP   || '0.0.0.0';
+const app = express();
+
+const port = process.env.PORT || 3000,
+      ip   = process.env.IP   || '0.0.0.0';
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors())
 
 app.listen(port, ip, function () {
-  console.log('Echo API is listening on port ' + port );
+  logger.info('Echo API is listening on port ' + port );
 });
 
-var reqData = function(req) {
-  const params = ['method', 'hostname', 'path', 'query', 'headers', 'body']
+const reqData = function(req) {
+  const params = ['method', 'hostname', 'path', 'query', 'headers', 'body'];
   return params.reduce(
     (accumulator, currentValue) => { accumulator[currentValue] = req[currentValue]; return accumulator},
     {}
@@ -24,8 +38,9 @@ var reqData = function(req) {
 };
 
 app.all('*', function (req, res) {
+  logger.info(util.inspect(reqData(req), false, null, true));
   res.set('Content-Type', 'application/json');
-  var response = reqData(req);
+  const response = reqData(req);
   res.status(200).send(JSON.stringify(response,null,2));
 });
 
