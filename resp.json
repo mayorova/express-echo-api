@@ -1,0 +1,239 @@
+[
+    {
+        "id": 4,
+        "category": {
+            "id": 1,
+            "name": "Dogs"
+        },
+        "name": "Dog 1",
+        "photoUrls": [
+            "url1",
+            "url2"
+        ],
+        "tags": [
+            {
+                "id": 1,
+                "name": "tag1"
+            },
+            {
+                "id": 2,
+                "name": "tag2"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 7,
+        "category": {
+            "id": 4,
+            "name": "Lions"
+        },
+        "name": "Lion 1",
+        "photoUrls": [
+            "url1",
+            "url2"
+        ],
+        "tags": [
+            {
+                "id": 1,
+                "name": "tag1"
+            },
+            {
+                "id": 2,
+                "name": "tag2"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 8,
+        "category": {
+            "id": 4,
+            "name": "Lions"
+        },
+        "name": "Lion 2",
+        "photoUrls": [
+            "url1",
+            "url2"
+        ],
+        "tags": [
+            {
+                "id": 1,
+                "name": "tag2"
+            },
+            {
+                "id": 2,
+                "name": "tag3"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 9,
+        "category": {
+            "id": 4,
+            "name": "Lions"
+        },
+        "name": "Dogs",
+        "photoUrls": [
+            "url1",
+            "url2"
+        ],
+        "tags": [
+            {
+                "id": 1,
+                "name": "tag3"
+            },
+            {
+                "id": 2,
+                "name": "tag4"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 4878,
+        "category": {
+            "id": 0,
+            "name": "sword"
+        },
+        "name": "Twin Terrors",
+        "photoUrls": [],
+        "tags": [],
+        "status": "available"
+    },
+    {
+        "id": 2816,
+        "category": {
+            "id": 0,
+            "name": "sword"
+        },
+        "name": "Heaven's Gate",
+        "photoUrls": [],
+        "tags": [],
+        "status": "available"
+    },
+    {
+        "id": 6446,
+        "category": {
+            "id": 0,
+            "name": "sword"
+        },
+        "name": "Muramasa",
+        "photoUrls": [],
+        "tags": [],
+        "status": "available"
+    },
+    {
+        "id": 2,
+        "category": {
+            "id": 1,
+            "name": "Tony"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "string"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 1002,
+        "category": {
+            "id": 1,
+            "name": "Parrot"
+        },
+        "name": "Smiley",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "string"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 4267,
+        "category": {
+            "id": 0,
+            "name": "sword"
+        },
+        "name": "Hephasto's Reaver",
+        "photoUrls": [],
+        "tags": [],
+        "status": "available"
+    },
+    {
+        "id": 4361,
+        "category": {
+            "id": 1,
+            "name": "Parrot"
+        },
+        "name": "Smiley",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "string"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": -5325297136107949039,
+        "category": {
+            "id": 3144957127728630612,
+            "name": "Dogs"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "ORxHW",
+            "pdBqr"
+        ],
+        "tags": [
+            {
+                "id": -7462404564786875782,
+                "name": "cYoHf"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 8890,
+        "category": {
+            "id": 1,
+            "name": "Parrot"
+        },
+        "name": "Smiley",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "string"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 1,
+        "name": "Pet1",
+        "photoUrls": [
+            "test1",
+            "test2"
+        ],
+        "tags": [],
+        "status": "available"
+    }
+]

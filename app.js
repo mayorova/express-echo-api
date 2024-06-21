@@ -3,6 +3,8 @@ const cors = require('cors');
 const logger = require('./lib/logger.js');
 const { reqData, inspect } = require('./lib/utils');
 
+const resp = require('./resp.json');
+
 const app = express();
 
 const port = process.env.PORT || 3000,
@@ -18,6 +20,11 @@ app.use(function (req, res, next) {
   logger.info(inspect(reqData(req)));
   logger.info('-----------------------------------\n\n');
   next();
+});
+
+app.get('/test', function (req, res) {
+  res.set('Content-Type', 'application/json');
+  res.status(200).json(resp);
 });
 
 // "Catch-all" handler
