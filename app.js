@@ -27,6 +27,18 @@ app.get('/test', function (req, res) {
   res.status(200).json(resp);
 });
 
+app.get('/csv1', function (req, res) {
+  res.set('Content-Type', 'text/csv');
+  const str = '"TEST","TEST"\n"hoge","hoge"'
+  res.status(200).send(str);
+});
+
+app.get('/csv2', function (req, res) {
+  res.set('Content-Type', 'text/csv');
+  const str = 'TEST,"TEST"\n"hoge","hoge"'
+  res.status(200).send(str);
+});
+
 // "Catch-all" handler
 app.all('*', function (req, res) {
   res.set('Content-Type', 'application/json');
